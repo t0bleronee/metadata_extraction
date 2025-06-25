@@ -144,7 +144,7 @@ export:
 
 ---
 
-## 💡 **Usage Examples**
+##  **Usage Examples**
 
 ### **Basic Usage**
 
@@ -163,8 +163,6 @@ print(f"Document sentiment: {metadata.sentiment}")
 results = extractor.process_directory("./documents/")
 extractor.generate_report(results, "analysis_report.html")
 ```
-
-### **Advanced Features**
 
 ```python
 # Custom entity extraction
@@ -203,17 +201,6 @@ metadata = response.json()
 - **Export Options**: Multiple format support (JSON, CSV, XML, PDF report)
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-### **Command Line Interface**
-```bash
-# Process single file
-python cli.py process --file document.pdf --output metadata.json
-
-# Batch processing
-python cli.py batch --input ./docs --output ./results --format csv
-
-# Generate analytics report
-python cli.py analyze --input ./results --report dashboard.html
-```
 
 ### **Jupyter Notebook Integration**
 - **Interactive Analysis**: Step-by-step document processing
@@ -221,39 +208,7 @@ python cli.py analyze --input ./results --report dashboard.html
 - **Experimentation**: Easy testing of different parameters
 - **Educational**: Perfect for learning and demonstration
 
----
 
-## 🔧 **Configuration & Customization**
-
-### **Custom Processing Pipelines**
-
-```python
-class CustomProcessor(DocumentProcessor):
-    def __init__(self):
-        super().__init__()
-        self.add_preprocessor(self.domain_specific_cleaner)
-        self.add_postprocessor(self.quality_enhancer)
-    
-    def domain_specific_cleaner(self, text):
-        # Custom cleaning logic
-        return cleaned_text
-```
-
-### **Plugin Architecture**
-
-```python
-# Custom metadata extractors
-@register_extractor("financial_metrics")
-def extract_financial_data(text):
-    # Extract financial figures, ratios, etc.
-    return financial_metadata
-
-# Custom export formats
-@register_exporter("confluence")
-def export_to_confluence(metadata):
-    # Format metadata for Confluence import
-    return confluence_markup
-```
 
 ---
 
