@@ -92,7 +92,6 @@ graph TD
 
 ### **Prerequisites**
 - Python 3.8 or higher
-- 4GB+ RAM (8GB recommended for large document processing)
 - Tesseract OCR engine
 - Git
 
