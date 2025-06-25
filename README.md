@@ -35,45 +35,58 @@ Our system employs a sophisticated three-stage architecture designed for scalabi
 
 ```mermaid
 graph TD
-    A[Document Input] --> B[Document Processor]
-    B --> C[NLP Analyzer]
-    C --> D[Metadata Generator]
-    D --> E[Structured Output]
-    
-    B --> B1[PDF Parser]
-    B --> B2[OCR Engine]
-    B --> B3[Text Extractor]
-    
-    C --> C1[Entity Recognition]
-    C --> C2[Topic Modeling]
-    C --> C3[Sentiment Analysis]
-    C --> C4[Summarization]
-    
-    D --> D1[JSON Export]
-    D --> D2[XML Export]
-    D --> D3[Database Storage]
+    A[📄 Document Input] --> B[⚙️ Document Processor]
+    B --> C[ NLP Analyzer]
+    C --> D[ Metadata Generator]
+    D --> E[ Structured Output]
+
+    %% Document Processor Components
+    B --> B1[ PDF Parser]
+    B --> B2[ OCR Engine]
+    B --> B3[ Text Extractor]
+
+    %% NLP Analyzer Components
+    C --> C1[ Entity Recognition]
+    C --> C2[ Topic Modeling]
+    C --> C3[ Sentiment Analysis]
+    C --> C4[ Summarization]
+
+    %% Metadata Generator Outputs
+    D --> D1[ JSON-LD Export]
+    D --> D2[ XML Export]
+    D --> D3[ Database Storage]
 ```
 
 ### **1. 📄 Document Processing Layer**
 - **Multi-format Support**: Native handling of PDF, DOCX, TXT, and image-based documents
 - **Advanced OCR**: Tesseract-powered optical character recognition for scanned documents
-- **Content Preservation**: Maintains document structure and formatting context
 - **Error Handling**: Robust exception handling for corrupted or unusual file formats
+  
+---
 
 ### **2. 🧠 Natural Language Processing Engine**
-- **Named Entity Recognition**: Identifies people, organizations, locations, and custom entities
-- **Topic Modeling**: Unsupervised discovery of thematic content using LDA and advanced clustering
-- **Sentiment Analysis**: Multi-dimensional sentiment scoring (positive, negative, neutral)
-- **Automatic Summarization**: Extractive and abstractive summarization techniques
-- **Keyword Extraction**: TF-IDF and contextual keyword identification
-- **Language Detection**: Automatic language identification and processing
+
+- **Named Entity Recognition**: Identifies domain-specific entities such as emails, URLs, dates, currencies, percentages, organizations, and phone numbers using regex-based techniques.
+- **Topic Modeling**: Extracts document themes using keyword-based relevance scoring and simple clustering without requiring training data.
+- **Sentiment Analysis**: Placeholder structure for integrating multi-dimensional sentiment scoring (positive, negative, neutral).
+- **Automatic Summarization**: Performs extractive summarization using sentence importance heuristics (position, length, keywords).
+- **Keyword Extraction**: Identifies relevant keywords using frequency-based scoring with stopword filtering.
+- **Language Detection**: Stubbed for automatic language identification; ready for integration with external language models.
+- **Document Structure Analysis**: Detects layout patterns including titles, headings, lists, and paragraph segmentation.
+- **Text Preprocessing**: Cleans and normalizes raw input (removing noise, fixing Unicode, trimming whitespace) for consistent NLP output.
+
+---
 
 ### **3. 🔧 Metadata Generation Framework**
-- **Structured Output**: Standardized metadata schemas (JSON-LD, Dublin Core compatible)
-- **Confidence Scoring**: Machine learning-based confidence metrics for each extracted feature
-- **Custom Taxonomies**: Support for domain-specific classification schemes
-- **Temporal Analysis**: Document aging and relevance scoring
 
+- **Structured Output**  
+  Produces standardized metadata formats such as **JSON-LD** and **Dublin Core**, ensuring compatibility with semantic web standards and metadata repositories.
+- **Confidence Scoring**  
+  Each extracted metadata field is accompanied by a **machine learning-based confidence score**, helping users assess the reliability of the information.
+- **Custom Taxonomies**  
+  Supports **domain-specific classification schemes** for tagging and categorizing content based on organizational or industry standards.
+- **Temporal Analysis**  
+  Performs **document aging and relevance scoring** by analyzing creation, modification, and access timestamps.
 
 ---
 ### Features
