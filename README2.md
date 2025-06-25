@@ -76,6 +76,15 @@ graph TD
 
 
 ---
+### Features
+
+*  **Document parsing** (PDF, DOCX, image OCR)
+*  **NLP Analysis** (keywords, entities, sentiment, summary)
+*  **Visualization** (word clouds, topic charts)
+*  **Readable summaries** and topic extraction
+*  **Streamlit interface** for easy interaction
+
+---
 
 ## 🛠️ **Technical Stack & Implementation**
 
@@ -115,35 +124,22 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 python -m spacy download en_core_web_lg  # Optional: Better accuracy
 
-# Run the application
+# Install Tesseract-OCR (for image OCR)
+* Download from: [https://github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
+* After install, set path in your code if needed:
+python
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+# Run the Application
 streamlit run app.py
 ```
-
-
-### **Advanced Configuration**
-
-Create a `config.yaml` file for customization:
-
-```yaml
-processing:
-  batch_size: 10
-  max_file_size: 50MB
-  supported_formats: [pdf, docx, txt, png, jpg]
-  
-nlp:
-  language: en
-  confidence_threshold: 0.7
-  max_keywords: 20
-  enable_entity_linking: true
-  
-export:
-  default_format: json
-  include_raw_text: false
-  compression: gzip
-```
-
 ---
 
+## 🌐 Live App
+### 🔗 Try it here:
+👉 https://metadataextraction-m7ciiquhepcup25ftappdpr.streamlit.app/
+
+---
 ##  **Usage Examples**
 
 ### **Basic Usage**
@@ -206,28 +202,8 @@ metadata = response.json()
 - **Interactive Analysis**: Step-by-step document processing
 - **Visualization Widgets**: Interactive charts and graphs
 - **Experimentation**: Easy testing of different parameters
-- **Educational**: Perfect for learning and demonstration
-
-
-
----
-
-
-
-### **Development Setup**
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/metadata_extraction.git
-
-# Install development dependencies
-pip install -r requirements.txt
-
-# Install pre-commit hooks
-pre-commit install
-
-# Run tests before committing
-pytest
-```
+- **Export Options**: Multiple format support (JSON, CSV, XML, PDF report)
 
 
 ---
+
