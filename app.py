@@ -24,11 +24,6 @@ from pathlib import Path
 src_path = Path(__file__).parent
 sys.path.append(str(src_path))
 
-"""
-Document Processing Module for Automated Metadata Generation
-This module handles text extraction from various document formats (PDF, DOCX, TXT)
-with OCR support for scanned documents.
-"""
 
 import os
 import io
@@ -344,10 +339,6 @@ class DocumentProcessor:
     
    # print("Document processor initialized successfully!")
    # print(f"Supported formats: {processor.supported_formats}")
-"""
-NLP Analyzer Module for Document Metadata Generation
-Extracts semantic information, entities, topics, and summaries
-"""
 
 import re
 import logging
@@ -849,10 +840,7 @@ class NLPAnalyzer:
 # 
 # print(f"\n💭 Sentiment: {results['sentiment']['sentiment']} ({results['sentiment']['score']:.2f})")
 
-"""
-Metadata Generator Module for Automated Document Analysis
-Converts NLP analysis results into structured, standardized metadata formats
-"""
+
 
 import json
 import uuid
