@@ -1,0 +1,27 @@
+
+Sample Document for Testing
+===========================
+
+This is a test document to demonstrate the automated metadata generation system.
+
+Introduction
+------------
+This document contains multiple sections to test the text extraction and analysis capabilities.
+The system should be able to identify key information and generate appropriate metadata.
+
+Key Topics
+----------
+- Document processing
+- Text extraction
+- Metadata generation
+- Natural language processing
+- Information retrieval
+
+Conclusion
+----------
+This sample document provides a foundation for testing our automated metadata generation system.
+The extracted text will be analyzed to create structured metadata that enhances document discoverability.
+
+Author: Test User
+Date: 2024
+Category: Technical Documentation
