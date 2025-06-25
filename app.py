@@ -176,11 +176,10 @@ def main():
     # Initialize session state
     if 'processed_documents' not in st.session_state:
         st.session_state.processed_documents = []
-    
+        
     # Sidebar
     with st.sidebar:
-        st.image("https://via.placeholder.com/300x150/2E86AB/FFFFFF?text=Metadata+Generator", 
-                caption="Intelligent Document Analysis")
+        st.markdown("#####Intelligent Document Analysis")
         
         st.markdown("### 🚀 Features")
         st.markdown("""
