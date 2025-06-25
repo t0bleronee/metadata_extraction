@@ -96,15 +96,12 @@ automated-metadata-generator/
 `
 ---
 
-## 🧪 Example Input
-
-Supports:
-
-* `.pdf`, `.docx`, `.txt`
-* `.png`, `.jpg` (OCR)
-* Copy-pasted plain text
+## 🌐 Live App
+## 🔗 Try it here:
+👉 https://metadataextraction-m7ciiquhepcup25ftappdpr.streamlit.app/
 
 ---
+
 
 ## Features
 - Document processing (PDF, DOCX, TXT)
@@ -123,7 +120,13 @@ Supports:
 - Tesseract OCR
 
 ---
+## Supports:
 
+* `.pdf`, `.docx`, `.txt`
+* `.png`, `.jpg` (OCR)
+* Copy-pasted plain text
+
+---
 ## 🐞 Troubleshooting
 
 * **`streamlit: command not found`** → Use `python -m streamlit run app.py`
