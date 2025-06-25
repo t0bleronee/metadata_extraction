@@ -1,10 +1,5 @@
 
-
-Here’s a **complete `README.md`** guide for your project — suitable for new users or collaborators. It covers setup, dependencies, usage, and troubleshooting.
-
----
-
-## 📘 README: Automated Metadata Generation Web App
+## 📘 Automated Metadata Generation Web App
 
 This project is a **Streamlit-based web application** for extracting metadata, summarizing, and analyzing documents (PDF, DOCX, image-based, or plain text) using NLP techniques.
 
