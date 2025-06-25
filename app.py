@@ -1,3 +1,4 @@
+
 """
 Streamlit Web Application for Automated Metadata Generation
 Main application file that integrates all modules into a user-friendly interface
@@ -1498,9 +1499,9 @@ def main():
         
     # Sidebar
     with st.sidebar:
-        st.markdown("#####Intelligent Document Analysis")
+       
         
-        st.markdown("### 🚀 Features")
+        st.markdown("## 🚀 Features")
         st.markdown("""
         - **Multi-format Support**: PDF, DOCX, TXT
         - **OCR Capability**: Scanned documents
