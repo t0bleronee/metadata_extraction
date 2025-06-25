@@ -179,7 +179,7 @@ def main():
         
     # Sidebar
     with st.sidebar:
-        st.markdown("#####Intelligent Document Analysis")
+        st.markdown("##### Intelligent Document Analysis")
         
         st.markdown("### 🚀 Features")
         st.markdown("""
